@@ -3,7 +3,7 @@
 
 
 <movevent event="StepIn" fromaid="15153" toaid="15155" script="ctf.lua" />
-     <!-- VIKING MOVIMENTS -->
+	<movevent event="StepIn" actionid="19049" script="krailos.lua" />
 	 <movevent event="StepIn" fromuid="24541" touid="24544" script="Novos/soil.lua" />
 	 <movevent event="StepIn" actionid="24545" script="Novos/ek.lua" />
 	 
