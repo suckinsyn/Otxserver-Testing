@@ -3,10 +3,12 @@
 function onThink(interval, lastExecution)
     local MESSAGE = {
         "[COMMANDS] !kills - !bless - !aol - !buyhouse - !sellhouse - !serverinfo - !online - !uptime - !exp - !outfit .",
-        "[TIBIA CLIENT UPDATED] http://167.114.28.249/index.php?subtopic=downloads Use our Own Client to avoid debugs and can use all the functions of the server.",
-		"[SECURITY] Do not use the same passwords of others otservers, they can hack your account (use diferent accounts).",
-		"[RULES] http://167.114.28.249/?subtopic=tibiarules Read the rules to avoid punishments.",
-		"[FACEBOOK] https://www.facebook.com/Global-OT-794892403980839/ curta nossa pagina e fique por dentro das atualizações e mudanças.",
+        "[TIBIA CLIENTS COMPATIVEIS]  10.97, 10.98, 11.00 E FLASH.",
+        "[BUGS?] REPORTEM EM: http://www.github.com/malucooo/otxserver-testing/.",
+        "[FEATURES] NEW DEPOT, NEW SPAWN, NEW CAST SYSTEM, NEW NPC SYSTEM VIA BANK BALANCE, NEW CRITICAL BOOST SYSTEM, NEW POTIONS, REWARD SYSTEM, FULL GLOBAL MAP WITH OTHERWORLD, WAR ANTIENTROSA, BATTLEFIELD, CAPTURE THE FLAG, LAST STANDING MAN AND ZOOMBIE EVENT.",
+		"[AGRADECIMENTO] TIBIAKING PELO ESPAÇO CONCEDIDO, TODOS QUE COLABORARAM MOSTRANDO OS BUGS, AOS AMIGOS QUE TRABALHARAM COMIGO: MATTYX14, MURILAO, MARCELOP, ANDREEYYY, SAMXXT, AOS CRIADORES DO THE FORGOTTEN SERVER E PRINCIPALMENTE E MAIS UMA VEZ A TODOS QUE ACREDITARAM E ACREDITAM NO PROJETO.",
+		"[PUBLICIDADE] DATAPACK DISPONIBILIZADO EXCLUSIVAMENTE PARA COMUNIDADE TIBIAKING POR ERICK NUNES(MALUCOOO).",
+		"[CONTATO] FACEBOOK:https://www.facebook.com/erick.nunes.75/ SKYPE: e_nunes@live.com WHATSAPP: +5493413026548.",
     }
     Game.broadcastMessage(MESSAGE[math.random(1, #MESSAGE)], MESSAGE_EVENT_ADVANCE) 
     return true
