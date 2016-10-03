@@ -23,6 +23,7 @@ local action_id = {
 	
 	[13528] = {x = 33185, y = 31643, z = 8}, -- lá dentro da quest e vai pra edron
 	[13529] = {x = 32113, y = 31358, z = 13}, -- de edron lá pra dentro COORDENADA CERTA
+	[13531] = {x = 32113, y = 31358, z = 13}, -- de farmine lá pra dentro COORDENADA CERTA
 }
 
 function onStepIn(creature, item, position, fromPosition)
