@@ -78,8 +78,6 @@
 		<monster file="goblins/muglex clan assassin.xml" name="Muglex Clan Assassin"/>
 	    <monster file="goblins/muglex clan footman.xml" name="Muglex Clan Footman"/>
 	    <monster file="goblins/muglex clan scavenger.xml" name="Muglex Clan Scavenger"/>		
-		<monster file="Novos/vikiskeleton.xml" name="Viki Skeleton"/>
-		<monster file="Novos/ratskeleton.xml" name="Rat Skeleton"/>		
 		<monster file="salamanders/troll-trained salamander.xml" name="Troll-Trained Salamander"/>	    
 	    <monster file="skeletons/brittle skeleton.xml" name="Brittle Skeleton"/>
 		<monster file="insects/dawnfly.xml" name="Dawnfly"/>   
