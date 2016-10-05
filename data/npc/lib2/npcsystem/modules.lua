@@ -105,7 +105,7 @@ if Modules == nil then
 				npcHandler:say("You are already promoted!", cid)
 			elseif player:getLevel() < parameters.level then
 				npcHandler:say("I am sorry, but I can only promote you once you have reached level " .. parameters.level .. ".", cid)
-			elseif not player:removeMoneyNpc(parameters.cost) then
+			elseif not player:removeMoney(parameters.cost) then
 				npcHandler:say("You do not have enough money!", cid)
 			else
 				player:setStorageValue(Storage.Promotion, 1)
@@ -135,7 +135,7 @@ if Modules == nil then
 			npcHandler:say("You already know how to cast this spell.", cid)
 		elseif player:getLevel() < parameters.level then
 			npcHandler:say("You have to be level " .. parameters.level .. " to learn this spell.", cid)
-		elseif not player:removeMoneyNpc(parameters.price) then
+		elseif not player:removeMoney(parameters.price) then
 			npcHandler:say("Return when you have enough gold.", cid)
 		else
 			npcHandler:say("Here you are. Look in your spellbook for the pronunciation of this spell.", cid)
@@ -165,7 +165,7 @@ if Modules == nil then
 			npcHandler:say("You need the blessing of the great geomancer first.", cid)
 		elseif parameters.bless == 6 and player:getBlessings() == 0 and not player:getItemById(2173, true) then
 			npcHandler:say("You don't have any of the other blessings nor an amulet of loss, so it wouldn't make sense to bestow this protection on you now. Remember that it can only protect you from the loss of those!", cid)
-		elseif not player:removeMoneyNpc(type(parameters.cost) == "string" and npcHandler:parseMessage(parameters.cost, parseInfo) or parameters.cost) then
+		elseif not player:removeMoney(type(parameters.cost) == "string" and npcHandler:parseMessage(parameters.cost, parseInfo) or parameters.cost) then
 			npcHandler:say("Oh. You do not have enough money.", cid)
 		else
 			npcHandler:say(parameters.text or "You have been blessed by one of the five gods!", cid)
@@ -212,7 +212,7 @@ if Modules == nil then
 			npcHandler:say("You must reach level " .. parameters.level .. " before I can let you go there.", cid)
 		elseif player:isPzLocked() then
 			npcHandler:say("First get rid of those blood stains! You are not going to ruin my vehicle!", cid)
-		elseif not player:removeMoneyNpc(cost) then
+		elseif not player:removeMoney(cost) then
 			npcHandler:say("You don't have enough money.", cid)
 		elseif os.time() < getPlayerStorageValue(cid, exhausts) then
 			npcHandler:say('Sorry, but you need to wait three seconds before travel again.', cid)
@@ -563,7 +563,7 @@ if Modules == nil then
 
 		local player = Player(cid)
 		if not isPlayerPremiumCallback or isPlayerPremiumCallback(player) or shop_premium[cid] ~= true then
-			if not player:removeMoneyNpc(cost) then
+			if not player:removeMoney(cost) then
 				npcHandler:say("You do not have enough money!", cid)
 			elseif player:isPzLocked() then
 				npcHandler:say("Get out of there with this blood.", cid)
@@ -608,7 +608,7 @@ if Modules == nil then
 
 		if(not isPlayerPremiumCallback or isPlayerPremiumCallback(cid) or parameters.premium ~= true) then
 			local player = Player(cid)
-			if player:removeMoneyNpc(cost) then
+			if player:removeMoney(cost) then
 				player:teleportTo(destination)
 				Position(destination):sendMagicEffect(CONST_ME_TELEPORT)
 			end
@@ -1069,7 +1069,7 @@ if Modules == nil then
 			self.npcHandler.talkStart[cid] = os.time()
 
 			if a > 0 then
-				player:removeMoneyNpc((a * shopItem.buy) + (b * 20))
+				player:removeMoney((a * shopItem.buy) + (b * 20))
 				return true
 			end
 
@@ -1078,7 +1078,7 @@ if Modules == nil then
 			local msg = self.npcHandler:getMessage(MESSAGE_BOUGHT)
 			msg = self.npcHandler:parseMessage(msg, parseInfo)
 			player:sendTextMessage(MESSAGE_INFO_DESCR, msg)
-			player:removeMoneyNpc(totalCost)
+			player:removeMoney(totalCost)
 			self.npcHandler.talkStart[cid] = os.time()
 			return true
 		end
@@ -1204,7 +1204,7 @@ if Modules == nil then
 				msg = module.npcHandler:parseMessage(msg, parseInfo)
 				module.npcHandler:say(msg, cid)
 				if a > 0 then
-					Player(cid):removeMoneyNpc(a * shop_cost[cid])
+					Player(cid):removeMoney(a * shop_cost[cid])
 					if shop_itemid[cid] == ITEM_PARCEL then
 						doNpcSellItem(cid, ITEM_LABEL, shop_amount[cid], shop_subtype[cid], true, false, 1988)
 					end
@@ -1215,7 +1215,7 @@ if Modules == nil then
 				local msg = module.npcHandler:getMessage(MESSAGE_ONBUY)
 				msg = module.npcHandler:parseMessage(msg, parseInfo)
 				module.npcHandler:say(msg, cid)
-				Player(cid):removeMoneyNpc(cost)
+				Player(cid):removeMoney(cost)
 				if shop_itemid[cid] == ITEM_PARCEL then
 					doNpcSellItem(cid, ITEM_LABEL, shop_amount[cid], shop_subtype[cid], true, false, 1988)
 				end

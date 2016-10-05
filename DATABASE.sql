@@ -717,7 +717,7 @@ CREATE TABLE `z_news_tickers` (
 
 
 INSERT INTO `z_news_tickers` (`date`, `author`, `image_id`, `text`, `hide_ticker`) VALUES
-(1445489191, 7944, 0, '<b>W</b>elcome <u>to</u> <b>Otx</b>Server&-<b>G</b>lobal [<i>by Malucooo</i>].', 0);
+(1445489191, 7944, 0, '<b>W</b>elcome <u>to</u> <b>Otx</b>Server-<b>G</b>lobal [<i>by Malucooo</i>].', 0);
 -- --------------------------------------------------------
 
 --

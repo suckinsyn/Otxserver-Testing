@@ -1056,5 +1056,4 @@
 	<house name="Rook House #2502" houseid="2502" entryx="32081" entryy="32270" entryz="7" rent="500000" townid="6" size="32" />
 	<house name="Rook House #2503" houseid="2503" entryx="32085" entryy="32266" entryz="7" rent="500000" townid="6" size="36" />
 	<house name="Rook House #2504" houseid="2504" entryx="32090" entryy="32266" entryz="7" rent="500000" townid="6" size="43" />
-	<house name="" houseid="2505" entryx="0" entryy="0" entryz="0" rent="0" townid="0" size="0" />
 </houses>
