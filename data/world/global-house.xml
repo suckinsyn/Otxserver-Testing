@@ -1040,21 +1040,6 @@
 	<house name="Rook House #3" houseid="2486" entryx="32085" entryy="32207" entryz="5" rent="500000" townid="6" size="9" />
 	<house name="Rook House #4" houseid="2487" entryx="32082" entryy="32201" entryz="5" rent="500000" townid="6" size="6" />
 	<house name="Thrarhor V e (Shop)" houseid="2488" entryx="33122" entryy="32861" entryz="7" rent="3000" townid="9" size="14" />
-	<house name="Rook House #2489" houseid="2489" entryx="32059" entryy="32266" entryz="7" rent="500000" townid="6" size="44" />
-	<house name="Rook House #2490" houseid="2490" entryx="32064" entryy="32266" entryz="7" rent="500000" townid="6" size="18" />
-	<house name="Rook House #2491" houseid="2491" entryx="32057" entryy="32275" entryz="7" rent="500000" townid="6" size="36" />
-	<house name="Rook House #2492" houseid="2492" entryx="32057" entryy="32279" entryz="7" rent="500000" townid="6" size="36" />
-	<house name="Rook House #2493" houseid="2493" entryx="32062" entryy="32284" entryz="7" rent="1000000" townid="6" size="116" />
-	<house name="Rook House #2494" houseid="2494" entryx="32077" entryy="32284" entryz="7" rent="500000" townid="6" size="67" />
-	<house name="Rook House #2495" houseid="2495" entryx="32083" entryy="32284" entryz="7" rent="500000" townid="6" size="64" />
-	<house name="Rook House #2496" houseid="2496" entryx="32066" entryy="32271" entryz="7" rent="500000" townid="6" size="12" />
-	<house name="Rook House #2497" houseid="2497" entryx="32066" entryy="32276" entryz="7" rent="500000" townid="6" size="14" />
-	<house name="Rook House #2498" houseid="2498" entryx="32066" entryy="32280" entryz="7" rent="500000" townid="6" size="22" />
-	<house name="Rook House #2499" houseid="2499" entryx="32072" entryy="32279" entryz="7" rent="500000" townid="6" size="46" />
-	<house name="Rook House #2500" houseid="2500" entryx="32072" entryy="32273" entryz="7" rent="500000" townid="6" size="56" />
-	<house name="Rook House #2501" houseid="2501" entryx="32086" entryy="32283" entryz="7" rent="500000" townid="6" size="52" />
-	<house name="Rook House #2502" houseid="2502" entryx="32081" entryy="32270" entryz="7" rent="500000" townid="6" size="32" />
-	<house name="Rook House #2503" houseid="2503" entryx="32085" entryy="32266" entryz="7" rent="500000" townid="6" size="36" />
-	<house name="Rook House #2504" houseid="2504" entryx="32090" entryy="32266" entryz="7" rent="500000" townid="6" size="43" />
+	<house name="Rook House #2489" houseid="2489" entryx="32059" entryy="32266" entryz="7" rent="500000" townid="6" size="4" />
 	<house name="" houseid="2505" entryx="0" entryy="0" entryz="0" rent="0" townid="0" size="0" />
 </houses>

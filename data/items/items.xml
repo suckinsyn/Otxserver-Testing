@@ -24521,12 +24521,12 @@
 		<attribute key="weight" value="1560" />
 	</item>
 	<item id="24317" name="midnight panther doll">
-	<attribute key="description" value="It is said to be a symbol of perseverance and luck. Awarded by Vikingtibia.com.br ." />
+	<attribute key="description" value="It is said to be a symbol of perseverance and luck." />
 		<attribute key="weight" value="1560" />
 	</item>
 	
 	<item id="24777" name="little adventurer doll">
-	<attribute key="description" value="This little fellow has faced many dangers. He will follow you anywhere. Awarded by Vikingtibia.com.br ." />
+	<attribute key="description" value="This little fellow has faced many dangers. He will follow you anywhere." />
 		<attribute key="weight" value="1560" />
 	</item>
 	
@@ -25916,7 +25916,7 @@
 		<attribute key="weaponType" value="shield" />
 	</item>
 	<item fromid="16105" toid="16106" article="a" name="medusa skull">
-		<attribute key="description" value="You see a medusa skull. Her hair's snakes are still alive. Awarded only on Vikingtibia.com.br ." />
+		<attribute key="description" value="You see a medusa skull. Her hair's snakes are still alive." />
 		<attribute key="weight" value="1000" />
 	</item>
 	<item fromid="16107" toid="16108" article="a" name="doll of Durin The Almighty">
@@ -31086,16 +31086,10 @@
 		<attribute key="description" value="Unlocks greatness in everyone. Souvenir from Thais Museum." />
 		<attribute key="weight" value="150" />
 	</item>
-	<item id="21469" article="a" name="viking amulet">
-		<attribute key="armor" value="3" /> 
-		<attribute key="slotType" value="necklace" />
-		<attribute key="absorbPercentEarth" value="4" />
-		<attribute key="absorbPercentIce" value="4" />
-		<attribute key="absorbPercentDeath" value="4" />
-		<attribute key="absorbPercentFire" value="4" />
-		<attribute key="absorbPercentHoly" value="4" />
-		<attribute key="absorbPercentPhysical" value="4" />
-		<attribute key="weight" value="50" />
+	<item id="21469" article="a" name="friendship amulet">
+	    <attribute key="slotType" value="necklace" />
+		<attribute key="description" value="Souvenir from Thais Museum." />
+		<attribute key="weight" value="520" />
 	</item>
 	<item id="21470" name="the Mexcalibur (replica)">
 		<attribute key="description" value="Souvenir from Thais Museum." />
@@ -35420,7 +35414,7 @@
 	</item>
 	<item id="23807" article="a" name="black knight doll">
 		<attribute key="weight" value="1800" />
-			<attribute key="description" value="Awarded by Vikingtibia.com.br . My sad story is told by few living humans but many dead warriors." />
+			<attribute key="description" value="My sad story is told by few living humans but many dead warriors." />
 	</item>
 	<item id="23810" name="The Lion's Heart">
 		<attribute key="weight" value="200" />
