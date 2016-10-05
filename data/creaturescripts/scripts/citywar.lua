@@ -144,8 +144,8 @@ local function sendWarSettings(player, info)
                 buyIn = getSetting(info.settings, SETTING_BUYIN)
             }          
  
-            if guild:getBankBalance() < options.buyIn then
-                return player:sendCancelMessage('Your guild does not have enough funds in the bank to pay the buy in.')
+            if player:getBankBalance() < options.buyIn then
+                return player:sendCancelMessage('Your does not have enough funds in the bank to pay the buy in.')
             end
  
             local ret = CityWars.onInvite(city, player, enemyGuild, enemyLeaders, options)
