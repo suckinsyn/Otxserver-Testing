@@ -59,12 +59,12 @@ setCombatCallback(combat, CALLBACK_PARAM_TARGETTILE, "onTargetTile")
 local function delayedCastSpell(cid, var)
     if isCreature(cid) == true then
         doCombat(cid, combat, positionToVariant(getCreaturePosition(cid)))
-	doCreatureSay(cid, "Gaz'Haragoth calls down: DEATH AND DOOM!", TALKTYPE_ORANGE_2)
+	doCreatureSay(cid, "Gaz'haragoth calls down: DEATH AND DOOM!", TALKTYPE_ORANGE_2)
     end
 end
 
 function onCastSpell(cid, var)
-    doCreatureSay(cid, "Gaz'Haragoth begins to channel DEATH AND DOOM into the area! RUN!", TALKTYPE_ORANGE_2)
+    doCreatureSay(cid, "Gaz'haragoth begins to channel DEATH AND DOOM into the area! RUN!", TALKTYPE_ORANGE_2)
     addEvent(delayedCastSpell, 5000, cid, var)
     return true
 end

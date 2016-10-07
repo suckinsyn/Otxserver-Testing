@@ -10,7 +10,7 @@ function onCastSpell(cid, var)
 	if #summoncount < 2 then
 		for i = 1, maxsummons - #summoncount do
 		local e, f = math.random(-2, 2), math.random(-2, 2)
-			local mid = doSummonCreature("minion of Gaz'Haragoth", { x=getCreaturePosition(cid).x+e, y=getCreaturePosition(cid).y+f, z=getCreaturePosition(cid).z })
+			local mid = doSummonCreature("minion of Gaz'haragoth", { x=getCreaturePosition(cid).x+e, y=getCreaturePosition(cid).y+f, z=getCreaturePosition(cid).z })
     			if mid == false then
 				return false
 			end

@@ -29,6 +29,7 @@ function onThink(interval)
                     end
                     -- change item UniqueID to object of class Item
                     local newItem = Item(newItemUID)
+					doItemSetAttribute(newItem, "description", 'Bought by ' .. player:getName() .. '.')
 
                     -- get player store inbox as container, so we can add item to it
                     local playerStoreInbox = player:getSlotItem(CONST_SLOT_STORE_INBOX)
@@ -39,6 +40,7 @@ function onThink(interval)
                         return true
                     end
                     -- add container with items to Store Inbox
+					doItemSetAttribute(newItem, "description", 'Bought by ' .. player:getName() .. '.')
                     receivedItemStatus = playerStoreInbox:addItemEx(newItem)
 
                     if type(receivedItemStatus) == "number" and receivedItemStatus == RETURNVALUE_NOERROR then
@@ -95,6 +97,7 @@ function onThink(interval)
                         return true
                     end
                     -- add container with items to Store Inbox
+					doItemSetAttribute(newContainer, "description", 'Bought by ' .. player:getName() .. '.')
                     receivedItemStatus = playerStoreInbox:addItemEx(newContainer)
 
                     if type(receivedItemStatus) == "number" and receivedItemStatus == RETURNVALUE_NOERROR then
