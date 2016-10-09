@@ -18,3 +18,47 @@ Issues/Problemas não deve ser utilizado como forma de suporte para a utilizaç�
 Facebook: www.facebook.com/erick.nunes.75
 Skype: e_nunes@live.com
 Whatsapp: +5493413026548
+
+<p style="text-align:center;">
+	<a href="http://www.tibiaserver.net/index.php?subtopic=createaccount" rel="external noopener noreferrer" target="_blank"><img alt="projeto.png" class="ipsImage ipsImage_thumbnailed" data-fileid="17618" src="http://www.tibiaking.com/forum/uploads/monthly_2016_10/projeto.png.195898c2c069d57ddc40286066f4cc61.png" style="width:379px;height:auto;"></a>
+</p>
+
+<p style="text-align:center;">
+	<strong>Projeto Apoiado Pela OTManager em Parceria com OTXServer-Global</strong>
+</p>
+
+<p style="text-align:center;">
+	<strong>EXP: 400x Rates</strong>
+</p>
+
+<p style="text-align:center;">
+	<strong>Hardcore PVP</strong>
+</p>
+
+<p style="text-align:center;">
+	<strong>Protocolo: 10.97-11.00 e Flash</strong>
+</p>
+
+<p style="text-align:center;">
+	<a href="http://otmanager.com.br/?utm_source=tibiaking&amp;utm_medium=banner-assinatura&amp;utm_term=otserv%2C%20tibia&amp;utm_content=banner-assinatura-parceria&amp;utm_campaign=parceria-malucooo" rel="external noopener noreferrer" target="_blank"><img alt="divulgação.png" class="ipsImage ipsImage_thumbnailed" data-fileid="17617" src="http://www.tibiaking.com/forum/uploads/monthly_2016_10/57f4a6b92c26f_divulgao.png.628330b09ff638461e9b2049aba17540.png" style="width:454px;height:auto;"></a>
+</p>
+
+<p style="text-align:center;">
+	<a href="http://otmanager.com.br/?utm_source=tibiaking&amp;utm_medium=banner-assinatura&amp;utm_term=otserv%2C%20tibia&amp;utm_content=banner-assinatura-parceria&amp;utm_campaign=parceria-malucooo" rel="external noopener noreferrer" target="_blank"><img alt="tCnfAin.gif" class="ipsImage" src="http://i.imgur.com/tCnfAin.gif" style="width:180px;height:auto;"></a>
+</p>
+
+<p style="text-align:center;">
+	<strong>O melhor conteúdo da atualidade, agora está em parceria com a OTMANAGER!</strong>
+</p>
+
+<p style="text-align:center;">
+	<strong><a href="http://www.github.com/malucooo/" rel="external noopener noreferrer" target="_blank">http://www.github.com/malucooo/</a></strong>
+</p>
+
+<p style="text-align:center;">
+	<strong>- Full Global Map with new areas of otherworld all quests and many features!</strong>
+</p>
+
+<p style="text-align:center;">
+	<strong>- Protocol 10.97-11.00 and Flash</strong>
+</p>
