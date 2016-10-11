@@ -51,8 +51,8 @@ local events = {
 	'VibrantEgg',
     'DeathCounter',
     'KillCounter',
-    'bless1'
- 
+    'bless1',
+	'lowerRoshamuul' 
 }
  
 local function onMovementRemoveProtection(cid, oldPosition, time)

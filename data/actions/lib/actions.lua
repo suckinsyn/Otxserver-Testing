@@ -293,19 +293,19 @@ function onUsePick(player, item, fromPosition, target, toPosition, isHotkey)
 		target:decay()
 		toPosition:sendMagicEffect(CONST_ME_POFF)
 
-	--elseif targetId == 23759 then
+		--elseif targetId == 23759 then
 		--target:remove()
 		--toPosition:sendMagicEffect(CONST_ME_POFF)
 		--player:addItem(23760, 1)
 		--player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You picked a beautiful lion's mane flower.")
 		
 		-- FIZ ESSE LIXO AQUI
-	elseif targetId == 11227 then
+		elseif targetId == 11227 then
 		target:remove()
 		toPosition:sendMagicEffect(CONST_ME_POFF)
 		player:addItem(2152, 10)
 	
-	elseif targetId == 7200 then
+		elseif targetId == 7200 then
 		target:transform(7236)
 		target:decay()
 		toPosition:sendMagicEffect(CONST_ME_HITAREA)
@@ -320,7 +320,7 @@ function onUsePick(player, item, fromPosition, target, toPosition, isHotkey)
 		target:decay()
 		toPosition:sendMagicEffect(CONST_ME_HITAREA)
 		
-elseif targetId == 481 then
+		elseif targetId == 481 then
 		target:transform(482)
 		target:decay()
 		toPosition:sendMagicEffect(CONST_ME_HITAREA)
@@ -336,7 +336,7 @@ elseif targetId == 481 then
 		toPosition:sendMagicEffect(CONST_ME_HITAREA)
 		
 	--The Ice Islands Quest, Nibelor 1: Breaking the Ice
-	elseif targetId == 3621 and targetActionId == 12026 then
+		elseif targetId == 3621 and targetActionId == 12026 then
 		local missionProgress, pickAmount = player:getStorageValue(Storage.TheIceIslands.Mission02), player:getStorageValue(Storage.TheIceIslands.PickAmount)
 		if missionProgress < 1 or pickAmount >= 3 or player:getStorageValue(Storage.TheIceIslands.Questline) ~= 3 then
 			return false
@@ -360,8 +360,8 @@ elseif targetId == 481 then
 		Game.createMonster(chakoyas[math.random(#chakoyas)], toPosition)
 		toPosition:sendMagicEffect(CONST_ME_TELEPORT)
 
-	elseif targetId == 1304 then
-		--The Pits of Inferno Quest
+		elseif targetId == 1304 then
+	--The Pits of Inferno Quest
 		if target.uid == 1022 then
 			for i = 1, #lava do
 				Game.createItem(5815, 1, lava[i])
@@ -369,7 +369,7 @@ elseif targetId == 481 then
 			target:transform(2256)
 			toPosition:sendMagicEffect(CONST_ME_SMOKE)
 
-		-- naginata quest
+	-- naginata quest
 		elseif targetActionId == 50058 then
 			local stoneStorage = Game.getStorageValue(GlobalStorage.NaginataStone)
 			if stoneStorage ~= 5 then
@@ -384,18 +384,18 @@ elseif targetId == 481 then
 		end
 
 	 --The Banshee Quest
-	elseif targetId == 9025 and targetActionId == 101 then
+		elseif targetId == 9025 and targetActionId == 101 then
 		target:transform(392)
 		target:decay()
 		toPosition:sendMagicEffect(CONST_ME_POFF)
 
 	 -- The Hidden City of Beregar Quest
-	elseif targetActionId == 50090 then
+		elseif targetActionId == 50090 then
 		--if player:getStorageValue(Storage.hiddenCityOfBeregar.WayToBeregar) == 1 then
 			player:teleportTo(Position(32566, 31338, 10))
 		--end
 
-	elseif targetActionId == 50114 then
+		elseif targetActionId == 50114 then
 		if Tile(Position(32617, 31513, 9)):getItemById(1027) and Tile(Position(32617, 31514, 9)):getItemById(1205) then
 			local rubbleItem = Tile(Position(32619, 31514, 9)):getItemById(5709)
 			if rubbleItem then
@@ -406,7 +406,7 @@ elseif targetId == 481 then
 		end
 
 	-- Pythius The Rotten (Firewalker Boots)
-	elseif targetActionId == 50127 then
+		elseif targetActionId == 50127 then
 		if player:getStorageValue(Storage.QuestChests.FirewalkerBoots) == 1 then
 			return false
 		end
@@ -442,20 +442,31 @@ elseif targetId == 481 then
 		end
 
 	-- Wrath of the emperor quest
-	elseif targetId == 12296 then
+		elseif targetId == 12296 then
 		player:addItem(12295, 1)
 		player:say("The cracked part of the table lets you cut out a large chunk of wood with your pick.", TALKTYPE_MONSTER_SAY)
 
-	elseif targetId == 22671 then
+		elseif targetId == 22671 then
 		target:transform(392)
 		target:decay()
-	else
+		else
 		return false
 	end
-
-	return true
+--Lower Roshamuul
+if (target ~= nil) and target:isItem() and (target:getId() == 22469) then
+    if math.random(100) > 50 then
+        player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "Crushing the stone produces some fine gravel.")
+        target:transform(22467)
+        target:decay()
+    else
+        Game.createMonster("Frazzlemaw", toPosition)
+        player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "Crushing the stone yields nothing but slightly finer, yet still unusable rubber.")
+        target:transform(22468)
+        target:decay()
+    end
+    return true
 end
-
+	
 function onUseMachete(player, item, fromPosition, target, toPosition, isHotkey)
 	local targetId = target.itemid
 	if isInArray(JUNGLE_GRASS, targetId) then

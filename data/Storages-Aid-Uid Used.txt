@@ -1,3 +1,29 @@
+local function getGuildBalance(id)
+    local guild = Guild(id)
+    if guild then
+        return guild:getBankBalance()
+    else
+        local balance
+        local resultId = db.storeQuery('SELECT `balance` FROM `guilds` WHERE `id` = ' .. id)
+        if resultId then
+            balance = result.getNumber(resultId, 'balance')
+            result.free(resultId)
+        end
+ 
+        return balance
+    end
+end
+ 
+local function setGuildBalance(id, balance)
+    local guild = Guild(id)
+    if guild then
+        guild:setBankBalance(balance)
+    else
+        db.query('UPDATE `guilds` SET `balance` = ' .. balance .. ' WHERE `id` = ' .. id)
+    end
+end
+
+
 ---//////////////////////////////////////////----
 Last Used Storage = 50214
 Last Used Aid = 50244
