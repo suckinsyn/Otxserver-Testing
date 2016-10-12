@@ -71,9 +71,9 @@ end
  function onThink()
     local cid = getNpcCid()
     local npc = Creature(cid)
-	local npcpos = {x = 32348, y = 32219, z = 6} 
+	local npcpos = {x = 32516, y = 32466, z = 7} 
 	
-	local creature = Tile(32350, 32219, 6):getTopCreature()
+	local creature = Tile(32516, 32468, 7):getTopCreature()
 	if creature and creature:isPlayer() then
 	selfTurn(EAST)
 	--doCreatureSay(npc, "Hello |PLAYERNAME|, Do your bets.", TALKTYPE_SAY, false, 0)
@@ -100,8 +100,9 @@ function creatureSayCallback(cid, type, msg)
         local npc = getNpcCid()
  
         -- Game table position userdata instances
-        local table_left_pos = {x = 32348, y = 32218, z = 6} -- Pos da frente do Npc onde gira o dado 32008, 31897, 7
-        local table_middle_pos = {x = 32349, y = 32218, z = 6} -- Pos do meio onde vai o dinheiro 32009, 31897, 7
+        local table_left_pos = {x = 32515, y = 32466, z = 7} -- Pos da frente do Npc onde gira o dado 32008, 31897, 7
+        local table_middle_pos = {x = 32515, y = 32467, z = 7} -- Pos do meio onde vai o dinheiro 32009, 31897, 7
+ 
  
         -- Search for coins on the left and middle tables and create item userdata instances
         local table_middle_cc = getTileItemById(table_middle_pos, 2160)
@@ -111,7 +112,7 @@ function creatureSayCallback(cid, type, msg)
         local cc_count = 0
         local pc_count = 0
         local ROLL, LOW, HIGH = 0, 1, 2
-        posplayer = {x = 32350, y = 32219, z = 6} -- Pos onde o player precisa estar 32010, 31898, 7
+        posplayer = {x = 32516, y = 32468, z = 7} -- Pos onde o player precisa estar 32010, 31898, 7
                 local ppos = getPlayerPosition(cid)
         if ppos.x == posplayer.x and ppos.y == posplayer.y then
         if isInArray({"H", "HIGH", "high", "h"}, msg) then
