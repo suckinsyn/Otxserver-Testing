@@ -76,10 +76,10 @@ function onThink()
 	local creature = Tile(32518, 32465, 7):getTopCreature() 
 	if creature and creature:isPlayer() then
 	selfTurn(EAST)
-	--doCreatureSay(npc, "Hello |PLAYERNAME|, Do your bets.", TALKTYPE_SAY, false, 0)
+	doCreatureSay(npc, "Hello |PLAYERNAME|, Do your bets.", TALKTYPE_SAY, false, 0)
     else
     selfTurn(SOUTH)
-	--doCreatureSay(npc, "Goodbye |PLAYERNAME|!.", TALKTYPE_SAY, false, 0)
+	doCreatureSay(npc, "Goodbye |PLAYERNAME|!.", TALKTYPE_SAY, false, 0)
 	end
 	
     if npc then
