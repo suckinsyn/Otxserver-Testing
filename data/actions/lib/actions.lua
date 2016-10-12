@@ -464,7 +464,8 @@ if (target ~= nil) and target:isItem() and (target:getId() == 22469) then
         target:transform(22468)
         target:decay()
     end
-    return true
+    	return true
+    end
 end
 	
 function onUseMachete(player, item, fromPosition, target, toPosition, isHotkey)
