@@ -96,10 +96,6 @@ end
 
 function creatureSayCallback(cid, type, msg)
 
-       -- if  isInArray({"Roll", "Up"}, msg) then
-              --  local l = 1
-              --  while l > 0 do l = l + 1 end
-      --  end
         -- NPC userdata instance
         local npc = getNpcCid()
  

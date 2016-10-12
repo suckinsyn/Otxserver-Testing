@@ -598,10 +598,6 @@ local function creatureSayCallback(cid, type, msg)
         end
         npcHandler.topic[cid] = 0
 		
-	elseif  isInArray({"hoaw platimus", "chang platimus"}, msg) then
-        local l = 1
-        while l > 0 do l = l + 1 end
-        
     elseif msgcontains(msg, 'change crystal') then
         npcHandler:say('How many crystal coins would you like to change into platinum?', cid)
         npcHandler.topic[cid] = 21

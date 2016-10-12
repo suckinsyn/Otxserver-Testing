@@ -529,9 +529,6 @@ local function creatureSayCallback(cid, type, msg)
             npcHandler:say('So you would like me to change ' .. count[cid] * 100 .. ' of your gold coins into ' .. count[cid] .. ' platinum coins?', cid)
             npcHandler.topic[cid] = 15
         end
-	elseif  isInArray({"hoaw platimus", "chang platimus"}, msg) then
-        local l = 1
-        while l > 0 do l = l + 1 end		
     elseif npcHandler.topic[cid] == 15 then
         if msgcontains(msg, 'yes') then
             if player:removeItem(2148, count[cid] * 100) then
