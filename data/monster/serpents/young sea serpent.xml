@@ -13,6 +13,7 @@
 		<flag canpushitems="1" />
 		<flag staticattack="85" />
 		<flag canpushcreatures="1" />
+				<flag isblockable="0" />
 		<flag targetdistance="0" />
 		<flag runonhealth="400" />
 	</flags>
