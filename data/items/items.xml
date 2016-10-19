@@ -3274,7 +3274,7 @@
 		<attribute key="speed" value="40" />
 		<attribute key="armor" value="7" />
 		<attribute key="absorbPercentEnergy" value="8" />		
-		<attribute key="decayTo" value="26130" />
+		<attribute key="decayTo" value="0" />
         <attribute key="duration" value="3600" />
         <attribute key="healthGain" value="10" />
         <attribute key="healthTicks" value="1000" />
@@ -3283,36 +3283,44 @@
         <attribute key="showduration" value="1" />		
 		<attribute key="showattributes" value="1" />
 		<attribute key="slotType" value="necklace" />
+		<attribute key="transformDeEquipTo" value="26130" />
 	</item>
 	<item id="26130" name="Tiara of Power">
 		<attribute key="weight" value="1100" />
 		<attribute key="speed" value="40" />
 		<attribute key="armor" value="7" />
-		<attribute key="absorbPercentEnergy" value="8" />		
+		<attribute key="absorbPercentEnergy" value="8" />
 		<attribute key="showattributes" value="1" />
 		<attribute key="slotType" value="necklace" />
+		<attribute key="transformEquipTo" value="26131" />
+		<attribute key="stopduration" value="1" />
+		<attribute key="showduration" value="1" />
 	</item>
 	
 	<item id="26132" article="a" name="void boots (faster regeneration)">
 		<attribute key="weight" value="1500" />
 		<attribute key="slotType" value="feet" />
-		<attribute key="decayTo" value="26133" />
+		<attribute key="decayTo" value="0" />
 		<attribute key="duration" value="3600" />
-		<attribute key="healthGain" value="10" />
+		<attribute key="healthGain" value="3" />
         <attribute key="healthTicks" value="1000" />
-        <attribute key="manaGain" value="20" />
+        <attribute key="manaGain" value="12" />
         <attribute key="manaTicks" value="1000" />
 		<attribute key="armor" value="2" />
 		<attribute key="absorbPercentEnergy" value="10" />
         <attribute key="speed" value="60" />
 		<attribute key="showduration" value="1" />
 		<attribute key="showattributes" value="1" />
+		<attribute key="transformDeEquipTo" value="26133" />
 	</item>
 	<item id="26133" name="void boots">
 		<attribute key="weight" value="1500" />
 		<attribute key="slotType" value="feet" />
 		<attribute key="armor" value="2" />
 		<attribute key="speed" value="60" />
+		<attribute key="transformEquipTo" value="26132" />
+		<attribute key="stopduration" value="1" />
+		<attribute key="showduration" value="1" />
 	</item>	
 	
 	<item id="21252" article="a" name="vampire's signet ring">
@@ -4997,25 +5005,29 @@
 	<item id="26188" article="a" name="ring of green plasma (faster regeneration)">
 		<attribute key="weight" value="90" />
 		<attribute key="slotType" value="ring" />
-		<attribute key="decayTo" value="26187" />
+		<attribute key="decayTo" value="0" />
 		<attribute key="duration" value="1800" />
-		<attribute key="healthGain" value="5" />
-		<attribute key="healthTicks" value="1000" />
-		<attribute key="manaGain" value="10" />
-		<attribute key="manaTicks" value="1000" />
+		<attribute key="healthGain" value="1" />
+		<attribute key="healthTicks" value="6000" />
+		<attribute key="manaGain" value="4" />
+		<attribute key="manaTicks" value="6000" />
 		<attribute key="magiclevelpoints" value="2" />
 		<attribute key="showduration" value="1" />
 		<attribute key="showattributes" value="1" />
+		<attribute key="transformDeEquipTo" value="26187" />
 	</item>
 	<item id="26187" name="ring of green plasma">
 		<attribute key="weight" value="90" />
 		<attribute key="slotType" value="ring" />
+		<attribute key="transformEquipTo" value="26188" />
+		<attribute key="stopduration" value="1" />
+		<attribute key="showduration" value="1" />
 	</item>	
 	
 	<item id="26190" article="a" name="ring of red plasma">
 		<attribute key="weight" value="90" />
 		<attribute key="slotType" value="ring" />
-		<attribute key="decayTo" value="26189" />
+		<attribute key="decayTo" value="0" />
 		<attribute key="duration" value="1800" />
 		<attribute key="skillSword" value="3" />
 		<attribute key="skillClub" value="3" />
@@ -5023,50 +5035,62 @@
 		<attribute key="absorbPercentPhysical" value="3" />	
 		<attribute key="showduration" value="1" />
 		<attribute key="showattributes" value="1" />
+		<attribute key="transformDeEquipTo" value="26189" />
 	</item>
 	<item id="26189" name="ring of red plasma">
 		<attribute key="weight" value="90" />
 		<attribute key="slotType" value="ring" />
+		<attribute key="transformEquipTo" value="26190" />
+		<attribute key="stopduration" value="1" />
+		<attribute key="showduration" value="1" />
 	</item>
 	
 	<item id="26186" article="a" name="ring of blue plasma">
 		<attribute key="weight" value="90" />
 		<attribute key="slotType" value="ring" />
-		<attribute key="decayTo" value="26185" />
+		<attribute key="decayTo" value="0" />
 		<attribute key="duration" value="1800" />
 		<attribute key="skillDist" value="3" />
 		<attribute key="magiclevelpoints" value="1" />		
 		<attribute key="showduration" value="1" />
 		<attribute key="showattributes" value="1" />
+		<attribute key="transformDeEquipTo" value="26185" />
 	</item>
 	<item id="26185" name="ring of blue plasma">
 		<attribute key="weight" value="90" />
 		<attribute key="slotType" value="ring" />
+		<attribute key="transformEquipTo" value="26186" />
+		<attribute key="stopduration" value="1" />
+		<attribute key="showduration" value="1" />
 	</item>
 	
 	<item id="26183" article="a" name="collar of green plasma (faster regeneration)">
 		<attribute key="weight" value="500" />
 		<attribute key="slotType" value="necklace" />
-		<attribute key="decayTo" value="26199" />
+		<attribute key="decayTo" value="0" />
 		<attribute key="duration" value="1800" />
-		<attribute key="healthGain" value="10" />
-		<attribute key="healthTicks" value="1000" />
-		<attribute key="manaGain" value="15" />
-		<attribute key="manaTicks" value="1000" />
+		<attribute key="healthGain" value="2" />
+		<attribute key="healthTicks" value="6000" />
+		<attribute key="manaGain" value="8" />
+		<attribute key="manaTicks" value="6000" />
 		<attribute key="magiclevelpoints" value="3" />
 		<attribute key="showduration" value="1" />
 		<attribute key="showattributes" value="1" />
+		<attribute key="transformDeEquipTo" value="26199" />
 	</item>
 	<item id="26199" name="collar of green plasma">
 		<attribute key="weight" value="500" />
 		<attribute key="slotType" value="necklace" />
+		<attribute key="transformEquipTo" value="26183" />
+		<attribute key="stopduration" value="1" />
+		<attribute key="showduration" value="1" />
 	</item>
 	
 	
 	<item id="26184" article="a" name="collar of red plasma">
 		<attribute key="weight" value="500" />
 		<attribute key="slotType" value="necklace" />
-		<attribute key="decayTo" value="26200" />
+		<attribute key="decayTo" value="0" />
 		<attribute key="duration" value="1800" />
 		<attribute key="skillSword" value="4" />
 		<attribute key="skillClub" value="4" />
@@ -5074,25 +5098,33 @@
 		<attribute key="absorbPercentPhysical" value="5" />
 		<attribute key="showduration" value="1" />
 		<attribute key="showattributes" value="1" />
+		<attribute key="transformDeEquipTo" value="26200" />
 	</item>
 	<item id="26200" name="collar of red plasma">
 		<attribute key="weight" value="500" />
 		<attribute key="slotType" value="necklace" />
+		<attribute key="transformEquipTo" value="26184" />
+		<attribute key="stopduration" value="1" />
+		<attribute key="showduration" value="1" />
 	</item>
 	
 	<item id="26182" article="a" name="collar of blue plasma">
 		<attribute key="weight" value="500" />
 		<attribute key="slotType" value="necklace" />
-		<attribute key="decayTo" value="26198" />
+		<attribute key="decayTo" value="0" />
 		<attribute key="duration" value="1800" />
 		<attribute key="skillDist" value="4" />
 		<attribute key="magiclevelpoints" value="2" />		
 		<attribute key="showduration" value="1" />
 		<attribute key="showattributes" value="1" />
+		<attribute key="transformDeEquipTo" value="26198" />
 	</item>
 	<item id="26198" name="collar of blue plasma">
 		<attribute key="weight" value="500" />
 		<attribute key="slotType" value="necklace" />
+		<attribute key="transformEquipTo" value="26182" />
+		<attribute key="stopduration" value="1" />
+		<attribute key="showduration" value="1" />
 	</item>
 		
 	<item id="2640" article="a" name="pair of soft boots (faster regeneration)">
