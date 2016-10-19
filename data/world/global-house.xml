@@ -1038,5 +1038,4 @@
 	<house name="Rathleton Plaza 4" houseid="2482" entryx="33604" entryy="31915" entryz="6" rent="5005" townid="33" size="102" />
 	<house name="Rathleton Plaza 3" houseid="2483" entryx="33615" entryy="31913" entryz="6" rent="5735" townid="33" size="113" />
 	<house name="Thrarhor V e (Shop)" houseid="2488" entryx="33122" entryy="32861" entryz="7" rent="3000" townid="9" size="14" />
-	<house name="" houseid="2505" entryx="0" entryy="0" entryz="0" rent="0" townid="0" size="0" />
 </houses>
