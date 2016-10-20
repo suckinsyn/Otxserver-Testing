@@ -3,7 +3,15 @@ waitingroom = {x = 32300, y = 32026, z = 12},
 }
 
 function onStepIn(cid, item, position, lastPosition)
-
+local player = Player(cid)
+if not player then
+    return false
+end
+if (player:getLevel() < 150) then
+       player:sendTextMessage(MESSAGE_INFO_DESCR, 'You need level 150 to join this event.')
+       player:teleportTo(lastPosition, true)
+       return false
+end
 doTeleportThing(cid, t.waitingroom)
 doSendMagicEffect(t.waitingroom, CONST_ME_TELEPORT)
 
