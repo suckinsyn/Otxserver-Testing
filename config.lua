@@ -37,9 +37,9 @@ coinImagesURL = "http://localhost/images/store/"
 expertPvp = false
 
 -- Version Manual
-clientVersionMin = 1097
-clientVersionMax = 1098
-clientVersionStr = "10.97-11.00"
+clientVersionMin = 1098
+clientVersionMax = 1099
+clientVersionStr = "10.98-11.00"
 
 -- Depot Limit
 freeDepotLimit = 2000
